@@ -1,9 +1,9 @@
-import random
+from random import randint
 
 
 def state_poling():
     if state == 'start':
-        rd_num = random.randint(1, set_num)
+        rd_num = randint(1, set_num)
         print(rd_num)
         print(f'Загаданно число от 1 до {set_num}, попробуй отгадать')
         state = 'new_game'
