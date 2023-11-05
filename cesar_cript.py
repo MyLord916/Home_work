@@ -26,3 +26,16 @@ def cesar_cript(message: str, n: int) -> str:
         else:
             res += el
     return res
+
+result = cesar_cript('Блажен, кто верует, тепло ему на свете!', 10)
+assert result == 'Лхкрпч, фьш мпъэпь, ьпщхш пцэ чк ымпьп!'
+
+result = cesar_cript('To be, or not to be, that is the question!', 17)
+assert  result == 'Kf sv, fi efk kf sv, kyrk zj kyv hlvjkzfe!'
+
+result = cesar_cript('Шсъцхр щмчжмщ йшм, нмтзж йшм лхшщзщг.', -7)
+assert result == 'Скупой теряет все, желая все достать.'
+
+result = cesar_cript('Sgd fqzrr hr zkvzxr fqddmdq nm sgd nsgdq rhcd ne sgd edmbd.', -25)
+assert result == 'The grass is always greener on the other side of the fence.'
+
